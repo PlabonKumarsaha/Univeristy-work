@@ -1,3 +1,2 @@
 # Univeristy-work
-all possible codes that i will have to do in my university life.Unfortunately i started late.this is my 3rd year
-so i can't upload my previously done course codes like :assembly  codes
+I am a student of American International University Bangladesh.I am an CSE student.So over the various courses we have to do coding.From now on  will be uploading my codes here .Unfortunately i started it in my 3rd year.So a 2 year coding courses like assembly,basic c codes will not get inclued.
