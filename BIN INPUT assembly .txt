@@ -1,0 +1,42 @@
+
+This code is an assembly code that takes Binary number as input
+.model small
+
+.stack 100h
+
+.data
+
+
+
+.code
+
+main proc 
+    mov ax,@data
+    mov ds,ax
+    xor bh,bh ; bh=0
+    
+    mov cx,8 ;cx=8
+    
+
+
+BIN:
+    mov ah,1
+    int 21h    ; input
+    mov bl,al
+    
+    cmp bl,13
+    je ex
+        
+    and bl,0Fh ; convert
+    
+    shl bh,1   ; left shift once
+    or  bh,bl  ; OR to insert bl in BH
+    jmp BIN
+
+ex: 
+    
+    mov ah,4ch
+    int 21h
+    
+    main endp
+end main

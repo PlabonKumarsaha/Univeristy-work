@@ -1,0 +1,120 @@
+.model
+.stack 100h
+.data
+.code
+    main proc
+        mov ax,@data
+        mov ds,ax
+        
+        ;read four input
+        mov ah,1
+        
+        int 21h
+        
+        mov bl,al
+       mov ah,1
+       int 21h
+       mov bh,al
+       mov ah,1
+       int 21h
+       mov cl,al
+       mov ah,1
+       int 21h
+       mov ch,al
+       
+     
+       cmp bl,'A'
+       je pabl
+       jmp againbl
+       pabl:
+       mov bl,3
+       jmp two 
+       againbl:
+       cmp bl,'B'
+       je pbbl
+       jmp aagainbl
+       pbbl:mov bl,2
+       jmp two
+       aagainbl:
+       cmp bl,'C'
+       je pcbl
+        jmp two
+       pcbl:mov bl,1  
+       
+       
+     two:  
+       cmp bh,'A'
+       je pabh
+       jmp againbh
+       pabh:
+       mov bh,3
+       jmp three 
+       againbh:
+       cmp bh,'B'
+       je pbbh
+       jmp aagainbh
+       pbbh:mov bh,2
+       jmp three
+       aagainbh:
+       cmp bh,'C'
+       je pcbh
+       jmp three
+       pcbh:mov bh,1  
+       
+       
+       three:  
+       cmp cl,'A'
+       je pacl
+       jmp againcl
+       pacl:
+       mov cl,3
+       jmp four
+       againcl:
+       cmp cl,'B'
+       je pbcl
+       jmp aagaincl
+       pbcl:mov cl,2
+       jmp four
+       aagaincl:
+       cmp cl,'C'
+       je pccl
+       jmp four
+       pccl:mov cl,1 
+       
+       four:  
+       cmp ch,'A'
+       je pach
+       jmp againch
+       pach:
+       mov ch,3
+       jmp avg 
+       againch:
+       cmp ch,'B'
+       je pbch
+       jmp aagainch
+       pbch:mov ch,2
+       jmp avg
+       aagainch:
+       cmp ch,'C'
+       je pcch
+       jmp avg
+       pcch:mov ch,1
+      
+       avg:
+       
+       add bl,bh
+       add bl,cl
+       add bl,ch
+       
+       mov al,bl
+       mov cl,4 
+       div cl
+       
+       jmp print
+       print:
+       mov ah,2
+       mov dl,al
+       int 21h 
+        main endp
+    
+    end main
