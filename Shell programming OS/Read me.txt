@@ -5,3 +5,6 @@
 3.then press enter cntrl+o >> press enter >> cntrl +x
 
 4.then to execute the code ./filename.sh
+
+5.there might be a case you don't have acess to your file..to acess the file you coded upon 
+write chmod 777 filename.sh
