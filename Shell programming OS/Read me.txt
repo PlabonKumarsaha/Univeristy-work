@@ -1,0 +1,7 @@
+1. start creating a new file with the command nano filename.sh
+
+2. then you can write your code
+
+3.then press enter cntrl+o >> press enter >> cntrl +x
+
+4.then to execute the code ./filename.sh
