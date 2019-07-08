@@ -1,0 +1,64 @@
+#include<bits/stdc++.h>
+
+
+using namespace std;
+
+int DDAAlgorithm(float x1,float x2,float y1,float y2)
+{
+  float dx,dy;
+  dx = abs(x2-x1);
+  dy = abs(y2-y1);
+  float m = dy/dx;
+  float add = 0;
+  float minX,minY;
+  if(x2==x1)
+  {
+      //maxY = max(y1,y2);
+      minY = max(y1,y2);
+      while(y1!=y2)
+      {
+          minY = minY+m;
+          cout<<" Y = "<<(int)minY<<endl;
+      }
+
+  }
+ if(y2==y1)
+  {
+      //maxY = max(y1,y2);
+      minX = max(x1,x2);
+      while(x1!=x2)
+      {
+          minX = minX+m;
+          cout<<" X = "<<(int)minY<<endl;
+      }
+
+  }
+ else{
+  while(x2!=x1 || y2!=y1)
+  {
+      y1 = y1+1;
+      x1 = x1+m;
+      cout<<"x = "<<(int)x1<<endl;
+
+  }
+
+ }
+
+
+}
+
+int main()
+{
+
+    int x1;
+int x2;
+int y2;
+int y1;
+ cout<<"First co ordinat.?"<<endl;
+ cin>>x1>>y1;
+
+ cout<<"second co ordinat.?"<<endl;
+ cin>>x2>>y2;
+ DDAAlgorithm(x1,x2,y1,y2);
+
+}
