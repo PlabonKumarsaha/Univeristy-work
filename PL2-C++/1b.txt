@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+   int sem,id,i;
+    cout<<"enter details:";
+   for(i=0;i<=3;i++)
+{
+   
+    cin>>sem[i]>>id[i];
+   
+}
+cout<<"the sem "<<sem<<" id no/'s are"<<id;
+
+return 0;
+}

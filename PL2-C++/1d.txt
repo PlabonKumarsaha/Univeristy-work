@@ -1,0 +1,16 @@
+
+#include<iostream>
+using namespace std;
+int main(){
+   int sem[3][3],id[3][3],j,i;
+   for(i=0;i<3;i++)
+   { for(j=0;j<3;j++)
+       cout<<"enter semester of "<<sem[j]<<":\t";
+       cin>>sem[i];
+       cout<<"enter id of"<<id[j]<<":\t";
+       cin>>id[i];
+   }
+
+
+return 0;
+}

@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+struct student{
+
+int id;
+int sem;
+
+
+};
+int main(){
+
+struct student s1;
+cout<<"enter semester";
+cin>>s1.id;
+cout<<"id is:"<<s1.id;
+cout<<"semester is"<<s1.sem;
+
+struct student s2;
+cout<<"enter semester";
+cin>>s2.id;
+cout<<"id is:"<<s2.id;
+cout<<"semester is"<<s2.sem;
+
+struct student s3;
+cout<<"enter semester";
+cin>>s3.id;
+cout<<"id is:"<<s3.id;
+cout<<"semester is"<<s3.sem;
+
+return 0;
+}

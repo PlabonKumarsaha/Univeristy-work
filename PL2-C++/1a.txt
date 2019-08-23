@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+   int sem1,id1,sem2,id2,sem3,id3;
+   cout<<"first student";
+   cin>> sem1>>id1;
+   cout<<sem1<<","<<id1;
+   cout<<"second student";
+   cin>> sem2>>id2;
+   cout<<sem2<<","<<id2;
+   cout<<"third student";
+   cin>> sem3>>id3;
+   cout<<sem3<<","<<id3;
+
+
+
+return 0;
+}

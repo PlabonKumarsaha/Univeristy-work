@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+   int sem[3],id[3],i;
+   for(i=0;i<3;i++)
+   {
+       cout<<"enter semester:\t";
+       cin>>sem[i];
+       cout<<"enter id:\t";
+       cin>>id[i];
+   }
+  
+
+return 0;
+}
