@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int temp;
+cout<<"Enter temperature";
+cin>>temp;
+cout<<" temperature is %d degree"<<temp;
+
+
+   return 0;
+}

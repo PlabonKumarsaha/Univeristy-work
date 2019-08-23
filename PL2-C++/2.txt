@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int a,area;
+cout<<"Enter length"<<endl;
+cin>>a;
+area=a*a;
+cout<<" temperature is <<area<<" meter";
+
+
+   return 0;
+}
