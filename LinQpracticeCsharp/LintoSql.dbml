@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LinQprac" Class="linqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-0QISMJ5\SQLEXPRESS;Initial Catalog=LinQprac;Integrated Security=True" SettingsObjectName="LinQpractice.Properties.Settings" SettingsPropertyName="LinQpracConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Info" Member="Infos">
+    <Type Name="Info">
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Id" Type="System.String" DbType="NVarChar(50)" IsPrimaryKey="true" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Detail" Member="Details">
+    <Type Name="Detail">
+      <Column Name="Id" Type="System.String" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FatherName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MotherName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
