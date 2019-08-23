@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int y=105;
+float m=4.5;
+char L;
+cin<<L;
+
+int *q;
+*q =y;
+q=&y;
+cout<<y<<","<<q<<","<<m<<","<<L<<endl;;
+
+   return 0;
+}

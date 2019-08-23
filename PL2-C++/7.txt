@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+
+int num_sem = 0;
+float temp = 0;
+float sum = 0;
+float gpa = 0.0;
+
+cout<<"Enter number of semesters\n";
+
+cin>>num_sem;
+
+cout<<"Enter max GPA per semester\n";
+int i;
+
+for( i =1; i<= num_sem; i++)
+
+{
+
+cout<<"Enter" <<i<< "sem GPA\t";
+
+cin>>temp;
+
+sum += temp;
+}
+
+gpa = sum/(float)num_sem;
+printf("Over all GPA is\t"<<gpa<<;
+
+return 0;}
