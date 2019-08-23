@@ -1,0 +1,22 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{ float tk,paisa50,paisa25;
+printf("Enter the amount of tk:");
+scanf("%f",&tk);
+paisa50=tk/0.50;
+paisa25=fmod(tk,.5);
+paisa25=paisa25/.25;
+if(paisa25==0)
+{
+    printf("50paisa coins:%f",paisa50);
+}
+else{
+        printf("50paisa coins:%f",paisa50-0.5);
+}
+       printf("\n25paisa coins:%f",paisa25);
+
+
+return 0;
+}

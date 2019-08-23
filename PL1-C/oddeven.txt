@@ -1,0 +1,185 @@
+1.#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter an number:");
+    scanf("%d",&num);
+    if(num%2==0)
+    {
+
+     printf("Even");}
+     else{printf("Odd");}
+    return 0;
+}
+
+
+
+
+2.#include<stdio.h>
+int main()
+{
+    int num,i,isprime;
+    printf("enter the number:");
+    scanf("%d",&num);
+    isprime=1;
+    for(i=2;i<=num/2;i++)
+        if((num%i)==0) isprime=0;
+    if(isprime==1)printf("the num is prime");
+    else printf("not prime");
+    return 0;
+
+
+
+3.#include<stdio.h>
+int main()
+{
+    int y;
+    printf("Enter year:");
+    scanf("%d",&y);
+    if(y%4==0)
+    { if(y%100==0)
+        {
+            if(y%400==0)
+           {
+               printf("leap year");}
+            else{("not leap year");}
+
+        }
+        else
+            printf("not leap year");
+
+    {
+        printf("leap year");
+    }
+    }
+    else{
+            printf("Not leap year");}
+    return 0;
+}
+
+4.#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char alphabet;
+    printf("Enter an alphabet:");
+    scanf("%c",&alphabet);
+    if(alphabet=='a' ||alphabet=='e' || alphabet == 'i' ||alphabet=='o'||alphabet=='u'||alphabet=='A'||alphabet=='E'||alphabet=='I'||alphabet=='O'||alphabet=='U');
+    {
+        printf(" %c alphabet is Vowel",alphabet);
+    }
+
+    return 0;
+}
+
+5.#include<stdio.h>
+int main()
+{
+    int num,factorial=1,i;
+    printf("Enter number::");
+    scanf("%d",&num);
+    if(num<0)
+    {
+        printf("number can't be negative");
+    }
+    else
+{
+
+
+    for(i=1;i<=num;++i)
+      {
+
+        factorial*=i;
+      }
+        printf("The factorial of %d:=%d",num,factorial);
+}
+
+    return 0;
+}
+
+
+6.#include<stdio.h>
+int main(){
+  int n,i=1,sum=0;
+
+  printf("Enter a number: ");
+  scanf("%d",&n);
+
+  while(i<n){
+      if(n%i==0)
+           sum=sum+i;
+          i++;
+  }
+  if(sum==n)
+      printf("%d is a perfect number",i);
+  else
+      printf("%d is not a perfect number",i);
+
+  return 0;
+}
+
+7.#include <stdio.h>
+int main()
+{
+    int number, originalNumber, remainder, result = 0;
+
+    printf("Enter a three digit integer: ");
+    scanf("%d", &number);
+
+    originalNumber = number;
+
+    while (originalNumber != 0)
+    {
+        remainder = originalNumber%10;
+        result += remainder*remainder*remainder;
+        originalNumber /= 10;
+    }
+
+    if(result == number)
+        printf("%d is an Armstrong number.",number);
+    else
+        printf("%d is not an Armstrong number.",number);
+
+    return 0;
+}
+
+8.#include <stdio.h>
+ 
+void main()
+{
+    int num, temp, digit, sum = 0;
+ 
+    printf("Enter the number \n");
+    scanf("%d", &num);
+    temp = num;
+    while (num > 0)
+    {
+        digit = num % 10;
+        sum  = sum + digit;
+        num /= 10;
+    }
+    printf("Given number = %d\n", temp);
+    printf("Sum of the digits %d = %d\n", temp, sum);
+return 0;
+}
+
+9.#include <stdio.h>
+int main()
+{
+    int n, reversedNumber = 0, remainder;
+
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+
+    while(n != 0)
+    {
+        remainder = n%10;
+        reversedNumber = reversedNumber*10 + remainder;
+        n /= 10;
+    }
+
+    printf("Reversed Number = %d", reversedNumber);
+
+    return 0;
+}
