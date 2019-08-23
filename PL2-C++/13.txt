@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main()
+{
+   #include<iostream>
+using namespace std;
+
+int main()
+{
+int deposit;
+   cout<<"enter amount";
+   cin>>deposit;
+   if(deposit>=10000)
+   {
+       cout<<"Your deposit is successful";
+   }
+   else{cout<<"YOUR DEPOSIT IS UNSUCCESFUL";}
+   int withdreaw;
+   cout<<"enter amount";
+   cin>>withdreaw;
+   if(withdreaw>=500)
+   {
+       cout<<"TRANSACTUION SUCESSFUL";
+   }
+   else{cout<<"TRANSACTION UNSCUSSESFUL "A;}
+
+return 0;}
+
+}

@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+char L1='A';
+char L2='B';
+if(L1=L2)
+{
+    cout<<"same letter";
+}
+else{cout<<"Different letter";
+cout<<"Before swaping:"<<L1<<","<<L2;
+int temp;
+L1=L2;
+L2=temp;
+cout<<"after swaping:"<<L1<<","<<L2;}
+return 0;}
+s

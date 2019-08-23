@@ -1,0 +1,40 @@
+# include <iostream>
+using namespace std;
+
+int main()
+{
+    char op;
+    float num1, num2;
+
+    cout << "Enter operator either p or m or mu or di: ";
+    cin >> op;
+
+    cout << "Enter two operands: ";
+    cin >> num1 >> num2;
+
+    switch(op)
+    {
+        case 'p':
+            cout << num1+num2;
+            break;
+
+        case 'm':
+            cout << num1-num2;
+            break;
+
+        case 'mu':
+            cout << num1*num2;
+            break;
+
+        case 'di':
+            cout << num1/num2;
+            break;
+
+        default:
+
+            cout << "wrong input!!";
+            break;
+    }
+
+    return 0;
+}
