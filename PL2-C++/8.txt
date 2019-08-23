@@ -1,17 +1,30 @@
 #include<iostream>
 using namespace std;
+class o
+{ public:
+  o()
+  {
+      cout<<"no argument"<<endl;
+  }
+    o( int x)
+  {
+      cout<<"single argument"<<x<<endl;
+  }
+  o(int x,int y)
+  {
+      cout<<"two arguments"<<x<<y<<endl;
+  }
+    o(int x,int y,int z)
+  {
+      cout<<"three argument"<<x<<y<<z;
+  }
+};
 
-int main()
+int min()
 {
-int y=105;
-float m=4.5;
-char L;
-cin<<L;
-
-int *q;
-*q =y;
-q=&y;
-cout<<y<<","<<q<<","<<m<<","<<L<<endl;;
-
-   return 0;
+    o A();
+   o A1(10);
+    o A2(10,12);
+    o A3(10,14,17);
+    return 0;
 }

@@ -1,39 +1,74 @@
 #include<iostream>
 using namespace std;
-class sum{
-int a;
-int b;
-public:
-    int add(int a,int b){
-int l;
-l=a+b;
-cout<<l<<endl;
+ class person
+ {
+     string name;
+     int age;
+ public:
+    setname(string n)
+    {
+        name=n;
 
- }
-int add(int a,int b,int c){
-int l;
-l=a+b+c;
-cout<<l<<endl;
+    }
+    getname()
+    {
+        cout<<name<<endl;
+    }
+     setage(int a)
+    {
+        age=a;
 
- }
- int add(int a,int b,int c,int d){
-int l;
-l=a+b+c+d;
-cout<<l<<endl;
+    }
+    getage()
+    {
+        cout<<age<<endl;
+    }
+ };
+ class student: public person
+ {
+     float cgpa;
+ public:
+      setcgpa(float c)
+    {
+        cgpa=c;
 
- }
+    }
+    getname()
+    {
+        cout<<cgpa<<endl;
+    }
+ };
+ class teacher: public person
+ {
+     int salary;
+     public:
+      setslary(int s)
+    {
+        salary=s;
 
-
-
-};
-int main(){
-
-cout<<"function overloading!"<<endl;
-sum s1;
-s1.add(1,2);
-s1.add(2,3,4);
-s1.add(2,4);
-
-
+    }
+    getsalary()
+    {
+        cout<<salary<<endl;
+    }
+ };
+int min()
+{
+    cout<<"person to student"<<endl;
+    student s;
+    s.setname("plll");
+    s.getname();
+    s.setage(19);
+    s.getage();
+    s.setcgpa(3.87);
+//    s.getcgpa();
+    cout<<"person to teacher"<<endl;
+      teacher t;
+    t.setname("pks");
+    t.getname();
+    t.setage(29);
+    t.getage();
+//    t.setsalary(50000);
+    t.getsalary();
 return 0;
 }

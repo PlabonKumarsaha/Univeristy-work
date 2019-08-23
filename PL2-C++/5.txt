@@ -1,28 +1,42 @@
 #include<iostream>
 using namespace std;
-class shop{
+class AirShip
+{ protected:
+     int passenger;
+      double cargo;
+  public:
+   void setdata(int p=0,double c=0)
+   {
+       passenger=p;
+         cargo=c;
+   }
+   void showdata()
+   {
+       cout<< cargo<<endl;
+       cout<<passenger;
+   }
+};
+class AirPlane: protected  AirShip
+{
+    private : string engine; // example values : propeller , jet
+  double range;
+  public:
+  AirPlane( int p,double c,string e,double r)
+  {
+  passenger=p;
+  cargo=c;
+  engine=e;
+  range=r;
+  cout<<passenger<<endl<<cargo<<endl<<engine<<endl<<range<<endl;
 
-  float  price;
-public:
-  void  setData()
- { float p;
-price=p;
-cout<<"enter price";
-cin>>p;
- }
- void  getData()
- {
-     cout<<price<<endl;
- }
+
+}
 
 };
-int main(){
-
-shop s1;
-s1.setData();
-s1.getData();
-
-
-
+int main()
+{
+AirPlane a1(10,14,"pkss",89.8);
 return 0;
 }
+
+

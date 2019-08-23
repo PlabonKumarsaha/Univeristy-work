@@ -1,23 +1,39 @@
 #include<iostream>
 using namespace std;
-class num{
-public:
-  void display(int a)
-   { a=10;
-       cout<<a;
-   }
-void  display(double a)
+class  building
 {
-    a=10.088;
-    cout<<a;
-}
+public:
+    building (){
+    int  number_of_floors;
+    float total_square_footage;
+    cin>>total_square_footage;
+    cout<<"total square footage:"<<total_square_footage<<endl;
+    cin>>number_of_floors;
+    cout<<"number of floars:"<<number_of_floors;
+    }
 };
-int main(){
-
-num n;
-n.display(10.99);
-
-
-
+class  house : public building
+{
+public:
+    int number_of_bedrooms;
+     int number_of_bathrooms;
+     cin>>number_of_bedrooms;
+     cin>> and number_of_bathrooms<<endl;
+     cout<<number_of_bedrooms <<endl;
+     cout<< number_of_bathrooms<<endl;
+} ;
+class office: public house
+{
+    int  number_of_fire_extinguishers;
+     int the number_of_telephones;
+     cin>> number_of_fire_extinguishers;
+     cin>> the number_of_telephones;
+     cout<<the number_of_telephones<<endl<< number_of_fire_extinguishers;
+};
+int main()
+{
+AirPlane a1(10,14,"pkss",89.8);
 return 0;
 }
+
+
