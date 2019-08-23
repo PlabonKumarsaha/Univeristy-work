@@ -1,25 +1,46 @@
-#include<iostream>
+# include <iostream>
 using namespace std;
-class student{
+class check{
 
+int a;
+int b;
+int c;
 public:
-    int Id(){
-        int ID;
-cout<<"enter id";
-cin>>ID;
-cout<<"id is:"<<ID;
+    check()
+    {
+        cout<<"default"<<endl;
     }
-
-
+    check(int a,int b,int c)
+    {
+        a=7;
+        b=5;
+        c=2;
+        cout<<a<<"\n"<<b<<"\n"<<c<<endl;
+    }
+    ~check()
+    {
+    cout<<"destruction!"<<endl;
+    }
+   void testnumber()
+   {
+       if(a<b)
+       {
+           cout<<"b is not large"<<endl;
+       }
+       else if(b<c)
+       {
+           cout<<"c is greater"<<endl;
+       }
+       else{cout<<"a is greater"<<endl;}
+   }
 
 };
-int main(){
 
-student t;
-t.Id();
-//cout<<t.ID;
+int main()
+{ check c1;
+check(8,9,11);
+c1.testnumber();
 
 
-
-return 0;
+    return 0;
 }

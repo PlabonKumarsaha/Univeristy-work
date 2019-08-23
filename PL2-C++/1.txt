@@ -1,12 +1,61 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
+
+class student
+{
+private:
+     string Name;
+     int id;
+     int phone;
+     float cgpa;
+
+public:
+         static int count;
+    void setData(string n,int i,int p,float c)
+    {
+        Name=n;
+        id=i;
+        phone=p;
+        cgpa=c;
+    }
+    void getData()
+    {
+        cout<<Name<<endl;
+        cout<<id<<endl;
+        cout<<phone<<endl;
+        cout<<cgpa<<endl;
+        count++;
+
+    }
+    void showcount()
+    {
+        cout<<"count:"<<count<<endl;
+    }
+    student()
+    {
+        cout<<"default";
+    }
+    ~student()
+    {
+        cout<<"destruction!";
+    }
+
+};
+
+int student::count=0;
 int main()
 {
-int temp;
-cout<<"Enter temperature";
-cin>>temp;
-cout<<" temperature is %d degree"<<temp;
+    student s1;
+    s1.setData("pks",17,0177,3.75);
+    s1.getData();
+    s1.showcount();
+    student s2;
+    s2.setData("prs",10,017,3.75);
+    s2.getData();
+    s2.showcount();
 
 
-   return 0;
+
+    return 0;
 }
+

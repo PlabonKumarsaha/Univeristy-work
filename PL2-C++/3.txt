@@ -1,26 +1,33 @@
 #include<iostream>
 using namespace std;
-class student{
-
+class course {
+    string  course_title;
+	int  course_code;
+	int credit;
 public:
-  int dm1,dm2;
-
-  void setDimensions (int d1, int d2)
- {
-     dm1=d1;
-     dm2=d2;
-     cout<<d1<<endl;
-     cout<<d2;
- }
+  void setdata(string ct,int co,int cr)
+    {
+        ct=course_title;
+        co=course_code;
+        cr=credit;
+    }
+   void getdata()
+   {  cout<<"enter course title:"<<endl;
+       cin>>course_title;
+       cout<<"enter course code:"<<endl;
+       cin>>course_code;
+       cout<<"enter course credit:"<<endl;
+       cin>>credit;
+   }
 };
-int main(){
-int d1=12;
-int d2=13;
-student t;
-t.setDimensions (d1,d2);
-
-
-
-
-return 0;
+int main()
+{
+    course s1[10];
+    for(int i=1;i<11;i++)
+    {
+        cout<<"course:"<<i<<"' info"<<endl;
+        s1[i].getdata();
+    }
+    return 0;
 }
+

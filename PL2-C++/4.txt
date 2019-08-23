@@ -1,39 +1,46 @@
 #include<iostream>
 using namespace std;
-class footballer{
+class  employees
+{
+    int salary;
+    string address;
+    int hiredate;
+    int phone;
+    int DOB;
+    public:
+    setData(int h,int s)
+    {
+        hiredate=h;
+        salary=s;
+    }
+    getData()
+    {    cin>>salary;
+        cin>>hiredate;
+        if(hiredate>12)
+        {
+           salary=salary*.2;
+           cout<<salary;
+        }
+    }
 
-  string  name;
-  int noofgoals;
-  int yearlyincome;
-public:
-  void setdata (string n, int g,int incom)
- {
-     name=n;
-     noofgoals=g;
-     yearlyincome=incom;
-
- }
- void getname()
- {
-     cout<<name<<endl;
- }
-  void getnoofgoals()
- {
-     cout<<noofgoals<<endl;
- }
-  void getincome()
- {
-     cout<<yearlyincome<<endl;
- }
 };
-int main(){
+class  departments
+{
+   string dname;
+   string location;
+int budget;
+};
+class branches
+{
+    string  location;
+    int managerID;
+};
+int main()
 
-footballer p1;
-p1.setdata("pks",10,100000);
-p1.getincome();
-p1.getnoofgoals();
-p1.getname();
-
+{ cout<<"show salary."<<endl;
+    employees e1;
+e1.setData(15,26000);
+e1.getData();
 
 
 return 0;
