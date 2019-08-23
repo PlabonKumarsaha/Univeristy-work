@@ -1,0 +1,102 @@
+#include<iostream>
+using namespace std;
+template <class t,class d>
+class Subtraction
+{ t a;
+d b;
+public:
+    void show(t l,t m)
+    {
+            this->a=l;
+     this->b=m;
+     cout<<l<<endl;
+     cout<<m<<endl;;
+
+    }
+    void SSub ()
+    {
+        cout<<"substraction:"<<a-b;
+    }
+};
+int main()
+{
+Subtraction<int,double>ob1;
+ob1.show(19,16.77);
+ob1.SSub ();
+return 0;}
+
+
+
+
+
+number2.
+
+#include<iostream>
+using namespace std;
+class A
+{  public:
+    void add (int x,int y)
+    {
+        int s;
+        s=x+y;
+        cout<<s<<endl;
+    }
+};
+class B:public A
+{ public:
+    void add (float m,int n)
+    {
+        float s;
+        s=m+n;
+        cout<<s<<endl;
+    }
+};
+int main()
+{ A *adding;
+adding->add(15,5);
+
+return 0;}
+
+
+number 3.
+
+
+
+#include<iostream>
+using namespace std;
+class DVD_DB
+{ string dvdName;
+int dvdPrice;
+int dvdQty;
+public:
+    DVD_DB(string n,int p,int q)
+    {
+        dvdName=n;
+        dvdPrice=p;
+        dvdQty=q;
+    }
+   void setValue()
+    {
+        string n;
+        int p;
+         int q;
+        cin>>dvdName;
+        cin>>dvdPrice;
+        cin>>dvdQty;
+    }
+    void showValue()
+    {
+        cout<<"name is :"<<dvdName<<endl;
+        cout<<"price is :"<<dvdPrice<<endl;
+        cout<<"quantity is:"<<dvdQty<<endl;
+    }
+
+};
+
+int main()
+{
+DVD_DB ob1("yee",7,8);
+ob1.setValue();
+ob1.showValue();
+return 0;}
+
