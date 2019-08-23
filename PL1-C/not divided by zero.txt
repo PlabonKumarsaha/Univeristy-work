@@ -8,7 +8,7 @@ int main()
     scanf("%d",&numA);
     printf("the second number:");
     scanf("%d",&numB);
-    if(numB==0) printf("Result undefined");
+    if(numB==0) printf("Result is undefined");
     else printf("Result:%d",numA/numB);
     return 0;
 }
