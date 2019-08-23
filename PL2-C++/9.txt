@@ -1,0 +1,19 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int sizeOfString;
+    cout<<"please input size of string"<<endl;
+    cin>>sizeOfString;
+    char charray[sizeOfString];
+    cin>>charray;
+
+    for(unsigned int i=sizeOfString-1; i>=0; i--){
+
+    cout<<charray[i]<<endl;
+    }
+return 0;
+}

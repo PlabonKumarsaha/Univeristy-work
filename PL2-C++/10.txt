@@ -1,0 +1,24 @@
+#include <iostream>
+
+
+using namespace std;
+int main()
+
+{
+        char s[1000], i;
+
+
+   cout<<"Enter a string without space: ";
+
+ cin>> s;
+
+
+ for(i = 0; s[i] != '\0'; i++);
+
+
+   cout<<"Length of string:"<<i<<endl; 
+
+
+    
+   return 0;
+}

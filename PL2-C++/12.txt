@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int fig_code;
+    float b, a, area, h;
+    cout<<" 1 --> triangle\n";
+    cout<<" 2 --> Rectangle\n";
+    cout<<" 3 --> square\n";
+
+    cout<<"-------------------------\n";
+    cout<<"Enter the Figure code\n";
+    cin>>fig_code;
+
+    switch(fig_code)
+    {
+    case 1:
+        cout<<"Enter the height\n";
+        cin>>h;
+        cout<<"enter a";
+        cout<<a;
+
+        area = .5* h * a;
+        cout<<"Area of a circle =" <<area;
+        break;
+    case 2:
+        cout<<"Enter the two length\n";
+        cin>>a>>b;
+        area = a * b;
+        cout<<"Area of a Reactangle = "<< area <<"\n";
+        break;
+    case 3:
+        cout<<"Enter the  length\n";
+        cin>>a;
+        area = a*a;
+        cout<<"Area of a Triangle =" <<area<<"\n";
+        break;
+
+    default:
+        cout<<"Error in figure code\n";
+        break;
+    }
+   return 0;
+}
