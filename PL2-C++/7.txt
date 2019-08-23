@@ -1,34 +1,39 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
+class sum{
+int a;
+int b;
+public:
+    int add(int a,int b){
+int l;
+l=a+b;
+cout<<l<<endl;
 
-int main()
+ }
+int add(int a,int b,int c){
+int l;
+l=a+b+c;
+cout<<l<<endl;
 
-{
+ }
+ int add(int a,int b,int c,int d){
+int l;
+l=a+b+c+d;
+cout<<l<<endl;
 
-int num_sem = 0;
-float temp = 0;
-float sum = 0;
-float gpa = 0.0;
+ }
 
-cout<<"Enter number of semesters\n";
 
-cin>>num_sem;
 
-cout<<"Enter max GPA per semester\n";
-int i;
+};
+int main(){
 
-for( i =1; i<= num_sem; i++)
+cout<<"function overloading!"<<endl;
+sum s1;
+s1.add(1,2);
+s1.add(2,3,4);
+s1.add(2,4);
 
-{
 
-cout<<"Enter" <<i<< "sem GPA\t";
-
-cin>>temp;
-
-sum += temp;
+return 0;
 }
-
-gpa = sum/(float)num_sem;
-printf("Over all GPA is\t"<<gpa<<;
-
-return 0;}

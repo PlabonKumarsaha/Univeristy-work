@@ -1,0 +1,30 @@
+
+#include<iostream>
+using namespace std;
+struct student
+{
+    int id;
+    int semester;
+};
+int main(){
+
+int i;
+struct student record[2];
+record[0].id=1;
+record[0].semester=2;
+record[1].id=2;
+record[1].semester=3;
+record[2].id=5;
+record[2].semester=6;
+for(i=0;i<=3;i++)
+{
+    cout<<"record of student no:"<<i+1;
+    cout<<"Id no is:"<<record[i].id<<endl;
+    cout<<"semester no is:"<<record[i].semester<<endl;
+}
+
+
+
+
+return 0;
+}

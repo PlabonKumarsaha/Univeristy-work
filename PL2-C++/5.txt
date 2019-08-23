@@ -1,28 +1,28 @@
-# include <iostream>
+#include<iostream>
 using namespace std;
+class shop{
 
-int main()
-{
-   int a[10];
-   int i;
-   int count1=0;
-   int count2;
-   cout<<"enter numbers";
-   for(i=0;i<10;i++)
-   {
-      cin>>a[i] ;
+  float  price;
+public:
+  void  setData()
+ { float p;
+price=p;
+cout<<"enter price";
+cin>>p;
+ }
+ void  getData()
+ {
+     cout<<price<<endl;
+ }
 
-   }
- if(a[i]<0)
-        {
-           count1+=count1;
-           cout<<count1;
-        }
-        else if(a[i]>0)
-        {
-            count2=+count2;
-            cout<<count2;
-        }
+};
+int main(){
 
-    return 0;
-}D
+shop s1;
+s1.setData();
+s1.getData();
+
+
+
+return 0;
+}

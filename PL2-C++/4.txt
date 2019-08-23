@@ -1,16 +1,40 @@
-# include <iostream>
+#include<iostream>
 using namespace std;
+class footballer{
 
-int main()
-{
-   int i;
-   for(i=0;i<=100;i++)
-   {
-       if(i%2==0)
-       {
-           cout<<"numbers are\n"<<i;
-       }
-   }
+  string  name;
+  int noofgoals;
+  int yearlyincome;
+public:
+  void setdata (string n, int g,int incom)
+ {
+     name=n;
+     noofgoals=g;
+     yearlyincome=incom;
 
-    return 0;
+ }
+ void getname()
+ {
+     cout<<name<<endl;
+ }
+  void getnoofgoals()
+ {
+     cout<<noofgoals<<endl;
+ }
+  void getincome()
+ {
+     cout<<yearlyincome<<endl;
+ }
+};
+int main(){
+
+footballer p1;
+p1.setdata("pks",10,100000);
+p1.getincome();
+p1.getnoofgoals();
+p1.getname();
+
+
+
+return 0;
 }
