@@ -1,0 +1,66 @@
+lab2 2.txt
+Today
+2:04 PM
+
+You uploaded an item
+Text
+lab2 2.txt
+#include <iostream>
+#include <string>
+#define MAX 10000
+
+using namespace std;
+
+string action;
+string rule;
+string state;
+
+void interupt_Input(string stri)
+{
+state = stri[i];
+
+for()
+ 
+}
+
+void rule_match(string state ,string rules)
+{
+    if(state == 'A' && action ==)
+    
+}
+
+string relex_vacume_cleaner(char loc,string sta)
+{
+ if(loc == 'A' && sta == "Dirty")
+ {
+     return "suck";
+ }
+    else if(loc == 'A' && sta == "Clean")
+ {
+     return "Right";
+ }
+ else if(loc == 'B' && sta =="Clean")
+ {
+     return "left";
+ }
+
+  else if(loc == 'B' && sta =="Dirty")
+ {
+     return "suck";
+ }
+
+}
+
+int main()
+{
+string str;
+interupt_Input(str);
+
+
+
+cout<<relex_vacume_cleaner(location,status)<<endl;
+
+
+
+    return 0;
+}

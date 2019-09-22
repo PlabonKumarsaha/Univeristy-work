@@ -1,0 +1,35 @@
+#include <iostream>
+#include <vector>
+#define MAX 10000
+
+using namespace std;
+string relex_vacume_cleaner(char loc,string sta)
+{
+ if(sta == "Dirty")
+ {
+     return "suck";
+ }
+    else if(loc == 'A')
+ {
+     return "Right";
+ }
+ else if(loc == 'B')
+ {
+     return "left";
+ } 
+    
+}
+
+int main()
+{
+string status;
+char location;
+
+cin>>location>>status;
+
+cout<<relex_vacume_cleaner(location,status)<<endl;
+
+
+
+    return 0;
+}
