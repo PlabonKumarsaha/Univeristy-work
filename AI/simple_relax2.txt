@@ -6,6 +6,7 @@ namespace ConsoleApp1
     class Program
     {
         static string location, status;
+        static int rule;
 
         public void state(string rule)
         {
@@ -17,22 +18,41 @@ namespace ConsoleApp1
             }
             status = temp.Trim();  
         }
-
         public string takeAction()
         {
-            if (status == "Dirty")
-            {
-                return "suck";
-            }
-            else if (location == "A")
+            if(rule == 1)
+            { return "suck"; }
+            else if(rule == 2)
             {
                 return "Right";
             }
-            else if (location == "B")
+            else if (rule == 3)
             {
                 return "left";
             }
-            return "";
+            
+            
+                return "";
+
+        }
+
+        public int rules()
+        {
+            if (status == "Dirty")
+            {
+                rule = 1;
+                
+            }
+            else if (location == "A")
+            {
+                rule = 2;
+                
+            }
+            else if (location == "B")
+            {
+                rule = 3;
+            }
+            return 0;
         }
         static void Main(string[] args)
         {
@@ -44,6 +64,8 @@ namespace ConsoleApp1
 
                 pr.state(input);
                 // Console.WriteLine("location : "+location + "     Status :" + status);
+                pr.rules();
+                    
                 Console.WriteLine(pr.takeAction());
             }
 
