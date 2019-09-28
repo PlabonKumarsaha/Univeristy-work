@@ -1,66 +1,53 @@
-lab2 2.txt
-Today
-2:04 PM
+using System;
 
-You uploaded an item
-Text
-lab2 2.txt
-#include <iostream>
-#include <string>
-#define MAX 10000
+namespace ConsoleApp1
 
-using namespace std;
+{   
+    class Program
+    {
+        static string location, status;
 
-string action;
-string rule;
-string state;
+        public void state(string rule)
+        {
+            string temp = "";
+            location = rule[0].ToString();
+            for(int i = 1;i<rule.Length;i++)
+            {
+                temp = temp + rule[i];
+            }
+            status = temp.Trim();  
+        }
 
-void interupt_Input(string stri)
-{
-state = stri[i];
+        public string takeAction()
+        {
+            if (status == "Dirty")
+            {
+                return "suck";
+            }
+            else if (location == "A")
+            {
+                return "Right";
+            }
+            else if (location == "B")
+            {
+                return "left";
+            }
+            return "";
+        }
+        static void Main(string[] args)
+        {
 
-for()
- 
-}
+            Program pr = new Program();
+            while (true)
+            {
+                string input = Console.ReadLine();
 
-void rule_match(string state ,string rules)
-{
-    if(state == 'A' && action ==)
-    
-}
+                pr.state(input);
+                // Console.WriteLine("location : "+location + "     Status :" + status);
+                Console.WriteLine(pr.takeAction());
+            }
 
-string relex_vacume_cleaner(char loc,string sta)
-{
- if(loc == 'A' && sta == "Dirty")
- {
-     return "suck";
- }
-    else if(loc == 'A' && sta == "Clean")
- {
-     return "Right";
- }
- else if(loc == 'B' && sta =="Clean")
- {
-     return "left";
- }
-
-  else if(loc == 'B' && sta =="Dirty")
- {
-     return "suck";
- }
-
-}
-
-int main()
-{
-string str;
-interupt_Input(str);
-
-
-
-cout<<relex_vacume_cleaner(location,status)<<endl;
-
-
-
-    return 0;
+            //Console.ReadKey();
+        }
+    }
 }
