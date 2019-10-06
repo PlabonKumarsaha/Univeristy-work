@@ -76,6 +76,7 @@ BFS(StartNode);
 //this prints the order of bfs.
 for(int k =0;k<node;k++)
 {
+    if(order[k]!=0)
     cout<<order[k]<<" ";
 }
 
