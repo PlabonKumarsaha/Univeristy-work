@@ -22,20 +22,21 @@ void BFS(int startNode)
     order[c++]=fr;
 
    Q.pop();
+   if(goalNode == fr){
+                    break;
+                }
        for(int i=0;i<graph[fr].size();i++)
        {
 
            next= graph[fr][i];
            if(color[next]==0)
            {
-                if(goalNode == next){
-                    break;
-                }
-                else{
+
+
                Q.push(next);
                color[next]=1;
               // cout<<fr<<" "<<next<<endl;
-                }
+
 
            }
 
