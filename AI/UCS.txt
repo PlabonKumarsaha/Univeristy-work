@@ -1,49 +1,88 @@
-#include <bits/stdc++.h> 
-using namespace std; 
-vector<int>graph[100];
-map<pair<int,int>,int>cost;
- 
+#include <bits/stdc++.h>
+#include <vector>
 
-vector<int> UCF(vector<int> goal,int start)
+using namespace std;
+vector<int>graph[100];
+
+int cost[1000][1000];
+typedef pair<int,int>c;
+int visited[1000];
+int goaln;
+
+
+vector<int> UCF(vector<int>graph[],int start)
 {
-   vector<int> answer; 
-  
-    
-    priority_queue<pair<int, int> > queue; 
-  
-    
-    for (int i = 0; i < goal.size(); i++) 
-        answer.push_back(INT_MAX);
-    
+   vector<int> answer;
+
+
+    priority_queue<c,vector<c>,greater<c> > costTrack;
+    int totalcost = 0;
+    costTrack.push(make_pair(totalcost,start));
+    visited[start] = 1;
+
+    while(!costTrack.empty())
+    {
+
+        pair<int,int> top =costTrack.top();
+        costTrack.pop();
+
+        cout<<top.first<<" "<<top.second<<" --";
+        if(top.second == goaln)
+        {
+            break;
+        }
+        for(int i = 0;i<graph[top.second].size();i++)
+        {
+
+            int u = graph[top.second][i];
+            int Pcost = cost[top.second][u];
+            Pcost = Pcost+top.first;
+            if(visited[u]!= 1)
+            {
+
+                costTrack.push(make_pair(Pcost,u));
+                visited[u] = 1;
+            }
+        }
+    }
+
+
+
+
+
 }
-  
-// graph 
-void main()
+
+// graph
+int main()
 {
-    int node;edge;
+    int node,edge;
     cin>>node>>edge;
-    
+    cost[node][node];
+    for(int i = 0; i < node; i++)
+        {
+            for(int j = 0;j<node;j++)
+            {
+
+                cost[i][j]=9999;
+            }
+        }
+
     for(int i = 0 ;i<edge;i++)
     {
         int a,b,c;
         cin>>a>>b>>c;
         graph[a].push_back(b);
         graph[b].push_back(a);
-        cost[make_pair(a,b)] = c;
-        int goaln;
-        vector<int> goal; 
+        cost[a][b] = c;}
+
         cout<<"Enter Goal Node"<<endl;
         cin>>goaln;
-        goal.push_back(goaln); 
-        
-        
-        vector<int> answer = UCF(goal,goaln);
-        
-        cout << "Minimum cost from start = " 
-         << answer[0] << endl;
-        
+
+
+
+       UCF(graph,goaln);
+
     }
-    
-    
-    return 0;
-}
+
+
+
