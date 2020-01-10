@@ -2,7 +2,7 @@
 #include <vector>
 
 using namespace std;
-vector<int>graph[100];
+vector<int>graph[1000];
 
 int cost[1000][1000];
 int hurasticVal[1000];
