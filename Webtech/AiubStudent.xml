@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AIUB>
+  <Student id ="id1">
+  <Name>
+        <FirstName>S</FirstName>
+        <MiddleName>T</MiddleName>
+		<LastName>U1</LastName>
+
+  </Name>
+  
+  <ID>17-33363-1</ID>
+  <CGPA>didn't want to share</CGPA>
+  <Depertment>CSE</Depertment>
+  <Course>
+  <EEE_Course>
+  
+  <course1011>
+  <CName>DC<CName>
+  <Result>A+</Result> 
+  </course1011>
+  
+  <course1012>
+  
+    <CName>AC<CName>
+    <Result>A+</Result>
+  
+    <Project>
+	<projectname>automatic door</projectname>
+	<desc>opens door automatically</desc>
+	<project>
+  
+  </course1012>
+  
+  <course1013>
+		<CName>Device<CName>
+		<Result>A</Result>
+  
+		<Project>
+			<projectname>Fire alarm</projectname>
+			<desc>detects fire in house and gives alarm</desc>
+		<project>
+  
+	<course1013>
+  
+  </EEE_Course>
+  
+  
+  
+  <CSE_Course>
+  
+  <course2001>
+	<CName>PL1<CName>
+	<Result>A+</Result>
+	<Lab>A+</Lab>
+  </course2001>
+  
+  <course2002>
+  <CName>se<CName>
+  <Result>A+</Result>
+	<Project>
+		<projectname>Health app</projectname>
+		<desc>maintains helth info and suggests acordingly</desc>
+	<project>
+  
+  </course2002>
+  
+  <course2003>
+  <CName>Java<CName>
+  <Result>A+</Result>
+  
+	<Project>
+		<projectname>Find Nearby doctor</projectname>
+		<desc>booking and find nearby doctor</desc>
+	<project>
+  
+  </course2003>
+  
+  </CSE_Course>
+  
+  
+  </Course>
+  
+	<Award>
+	Financial waiver : 60%
+	</Award>
+  
+  </Student>
+  
+  
+  
+    <Student id ="id2">
+  <Name>
+        <FirstName>A</FirstName>
+        <MiddleName>B</MiddleName>
+		<LastName>C</LastName>
+
+  </Name>
+  
+  <ID>17-33323-1</ID>
+  <CGPA>didn't want to share</CGPA>
+  <Depertment>CSE</Depertment>
+  <Course>
+  <EEE_Course>
+  
+  <course1011>
+  <CName>DC<CName>
+  <Result>A+</Result> 
+  </course1011>
+  
+  <course1012>
+  
+    <CName>AC<CName>
+    <Result>A+</Result>
+  
+    <Project>
+	<projectname>automatic door</projectname>
+	<desc>opens door automatically</desc>
+	<project>
+  
+  </course1012>
+  
+  <course1013>
+		<CName>Device<CName>
+		<Result>A</Result>
+  
+		<Project>
+			<projectname>Fire alarm</projectname>
+			<desc>detects fire in house and gives alarm</desc>
+		<project>
+  
+	<course1013>
+  
+  </EEE_Course>
+  
+  
+  
+  <CSE_Course>
+  
+  <course2001>
+	<CName>PL1<CName>
+	<Result>A+</Result>
+	<Lab>A+</Lab>
+  </course2001>
+  
+  <course2002>
+  <CName>se<CName>
+  <Result>A+</Result>
+	<Project>
+		<projectname>Health app</projectname>
+		<desc>maintains helth info and suggests acordingly</desc>
+	<project>
+  
+  </course2002>
+  
+  <course2003>
+  <CName>Java<CName>
+  <Result>A+</Result>
+  
+	<Project>
+		<projectname>Find Nearby doctor</projectname>
+		<desc>booking and find nearby doctor</desc>
+	<project>
+  
+  </course2003>
+  
+  </CSE_Course>
+  
+  
+  </Course>
+  
+	<Award>
+	Financial waiver : 60%
+	</Award>
+  
+  </Student>
+  
+  
+ 
+
+</AUUB>
