@@ -9,7 +9,7 @@ public class MyMainClass {
         acc1.showInfo();
        Account acc2 = new Account("Iftekhar","17-35687-1",20000);
        acc2.showInfo();
-        //new
+        //new one
         acc1.deposit(500);
         acc1.showInfo();
         
