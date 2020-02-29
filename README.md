@@ -13,3 +13,5 @@ AI(Artificial Intelligence)-All are implememnted using c++
 9.simple_reflex
 10.simple_relax2
 
+COA(Computer Oranization and Architecutre)-Assembly lamugae was used using 8086 immulator
+
