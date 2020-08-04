@@ -14,4 +14,12 @@ I am a student of American International University Bangladesh.I am an CSE stude
 * simple_relax2
 
 ## COA(Computer Oranization and Architecutre)-Assembly lamugae was used using 8086 immulator
+* take input
+* print string
+* convert  binary,hexa
+* substraction
+* multiplication
+* shift
+* label
+* loop
 
