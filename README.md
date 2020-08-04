@@ -22,4 +22,5 @@ I am a student of American International University Bangladesh.I am an CSE stude
 * shift
 * label
 * loop
+* stack
 
